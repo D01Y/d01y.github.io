@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <title>えらー！</title>
+  <style>
+    body {
+      background: rgb(255, 255, 255);
+      color: white;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .font-cotei {
+      font-family: 'Noto Sans JP', Arial, sans-serif;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .main {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      max-width: 240px;
+      padding: 24px;
+      color: rgb(0, 0, 0);
+    }
+
+    img {
+      border-radius: 50%;
+      max-width: 240px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #0A6ED1;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      padding: 8px 24px;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    @keyframes byun {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(1800deg);
+      }
+    }
+
+    .byun {
+      animation: byun 2s infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main font-cotei">
+    <div class="card">
+      <img class="byun" src="icon.png">
+      <div class="header">
+        <h1>ページを表示できません</h1>
+      </div>
+      <p>かわりに踊るD君がいるよ！</p>
+      <button class="font-cotei" onclick="location.href='../'">戻ります</button>
+    </div>
+  </div>
+</body>
+
+</html>
